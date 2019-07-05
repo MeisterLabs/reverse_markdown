@@ -25,7 +25,6 @@ module ReverseMarkdown
       def treat_text(node)
         text = node.text
         text = preserve_nbsp(text)
-        text = remove_border_newlines(text)
         text = escape_keychars(text)
 
         text = preserve_keychars_within_backticks(text)
